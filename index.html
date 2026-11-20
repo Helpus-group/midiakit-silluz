@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SILLUZ · Mídia Kit 2027</title>
+  <meta name="description" content="Mídia kit de SILLUZ, DJ e produtor de Belo Horizonte. Tech House e Deep House. Release, faixas, festas onde já tocou, redes, presskit e booking.">
+  <meta property="og:title" content="SILLUZ · Mídia Kit 2027">
+  <meta property="og:description" content="DJ e produtor de Belo Horizonte. Tech House & Deep House, and everything in between. Booking pelo WhatsApp.">
+  <meta property="og:image" content="assets/fotos/capa.webp">
+  <meta name="theme-color" content="#c9cacc">
+  <link rel="icon" type="image/png" href="assets/icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/frames/desktop/f_0001.webp">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="silluz.css">
+</head>
+<body>
+
+<header class="topo">
+  <a href="#inicio" class="marca" aria-label="SILLUZ">
+    <img src="assets/logo.png" alt="SILLUZ" class="marca-logo" width="1394" height="300">
+  </a>
+  <nav class="menu" aria-label="Seções">
+    <a href="#bio">Bio</a>
+    <a href="#palcos">Onde já tocou</a>
+    <a href="#musica">Lançamentos</a>
+    <a href="#redes">Redes</a>
+    <a href="#presskit">Presskit</a>
+    <a href="#booking" class="menu-cta">Booking</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ABERTURA: recortes do ensaio com eco + logo atrás (como a capa do mídia kit) -->
+  <section id="inicio" class="cine" style="--altura: 320vh">
+    <div class="cine-palco">
+      <canvas class="cine-canvas" aria-hidden="true"></canvas>
+      <div class="cine-vinheta"></div>
+      <div class="cine-dica" aria-hidden="true"><span></span></div>
+    </div>
+  </section>
+
+
+  <!-- CAPA: título do mídia kit (depois da animação) -->
+  <section id="kit" class="secao secao--kit">
+    <div class="kit revelar">
+      <h1 class="kit-titulo">Mídia kit <em>2027</em></h1>
+      <dl class="kit-ficha">
+        <div><dt>Artista</dt><dd>Silluz · Mateus Silluzio</dd></div>
+        <div><dt>Gêneros</dt><dd>Tech House · Deep House <span class="kit-serif">and everything in between</span></dd></div>
+        <div><dt>Base</dt><dd>Belo Horizonte, MG</dd></div>
+      </dl>
+      <p class="kit-festas">Já tocou na House Sessions, No Signal BH, The Roof, Hit &amp; Run e D.HAUZ.</p>
+    </div>
+  </section>
+
+  <!-- 01 · BIO -->
+  <section id="bio" class="secao secao--editorial">
+    <div class="folio" aria-hidden="true"><span>Silluz</span><span>Music maker</span><span>®</span><span>01 / 06</span></div>
+    <img class="marca-dagua" src="assets/sigla.png" alt="" aria-hidden="true" width="779" height="295">
+    <img class="arte arte--direita arte--foto" src="assets/fotos/bio.webp" alt="Silluz em ensaio de estúdio, de conjunto azul-marinho" loading="lazy">
+    <div class="secao-grade">
+      <div class="bio-texto revelar">
+        <span class="rotulo">01 · Bio</span>
+        <h2>Sobre <em>mim</em></h2>
+        <div class="release">
+          <p class="release-abre">Mateus Silluzio encontrou na música eletrônica um idioma próprio. Começou a tocar ainda muito jovem, guiado por uma curiosidade natural por sons e texturas.</p>
+          <p>Com o tempo, esse impulso criativo o levou a produzir suas próprias faixas. Hoje, ele assina como Silluz, uma versão condensada de seu sobrenome que carrega em si o significado de luz, mas não qualquer luz: a que emana de dentro, discreta, precisa, enigmática.</p>
+          <p>Seu estilo é marcado por sets que transitam entre diferentes instrumentos, ritmos e camadas sonoras, sempre com uma construção sensível e sofisticada. Mesmo com uma presença mais introspectiva nos palcos, Silluz prende a atenção do público com um repertório que foge do óbvio e promete redefinir a cena.</p>
+        </div>
+        <button class="link-seta" data-copiar-release type="button">Copiar release ↗</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · ONDE JÁ TOCOU (marinho) -->
+  <section id="palcos" class="secao secao--larga secao--marinho">
+    <div class="folio" aria-hidden="true"><span>Silluz</span><span>Music maker</span><span>®</span><span>02 / 06</span></div>
+    <img class="marca-dagua marca-dagua--centro" src="assets/sigla-branca.png" alt="" aria-hidden="true" width="779" height="295">
+    <div class="painel painel--cabecalho revelar">
+      <span class="rotulo">02 · Onde já tocou</span>
+      <h2>Festas &amp; <em>pistas</em></h2>
+    </div>
+    <div class="letreiro revelar" data-lista="festas" aria-label="Festas onde já tocou"></div>
+    <ol class="grade-num festas" data-lista="festasGrade"></ol>
+  </section>
+
+  <!-- 03 · LANÇAMENTOS -->
+  <section id="musica" class="secao secao--larga secao--editorial">
+    <div class="folio" aria-hidden="true"><span>Silluz</span><span>Music maker</span><span>®</span><span>03 / 06</span></div>
+    <div class="painel painel--cabecalho revelar">
+      <span class="rotulo">03 · Lançamentos</span>
+      <h2>Faixas <em>autorais</em></h2>
+    </div>
+    <div class="grade-num capas" data-lista="lancamentos"></div>
+    <a class="link-seta link-seta--centro" data-ouvir-tudo target="_blank" rel="noopener" hidden></a>
+  </section>
+
+  <!-- 04 · REDES SOCIAIS (marinho, recorte com eco) -->
+  <section id="redes" class="secao secao--marinho secao--recorte">
+    <div class="folio" aria-hidden="true"><span>Silluz</span><span>Music maker</span><span>®</span><span>04 / 06</span></div>
+    <img data-moldura="recorte transparente" class="recorte recorte--esquerda" src="assets/fotos/redes.webp" alt="" aria-hidden="true" loading="lazy" width="934" height="1500">
+    <div class="recorte-conteudo revelar">
+      <span class="rotulo">04 · Redes sociais</span>
+      <h2>Redes <em>sociais</em></h2>
+      <ul class="redes-grade" data-lista="redes"></ul>
+    </div>
+  </section>
+
+  <!-- 05 · PRESSKIT -->
+  <section id="presskit" class="secao secao--editorial secao--presskit">
+    <div class="folio" aria-hidden="true"><span>Silluz</span><span>Music maker</span><span>®</span><span>05 / 06</span></div>
+    <a class="presskit revelar" data-fotos target="_blank" rel="noopener">
+      <span class="rotulo">05 · Presskit</span>
+      <span class="presskit-titulo">Presskit</span>
+      <span class="presskit-itens"><span>Fotos em alta</span><span>Release</span><span>Músicas</span></span>
+      <span class="presskit-acao">Abrir no Google Drive <span aria-hidden="true">↗</span></span>
+    </a>
+  </section>
+
+  <!-- 06 · BOOKING (marinho, recorte) -->
+  <section id="booking" class="secao secao--marinho secao--recorte">
+    <div class="folio" aria-hidden="true"><span>Silluz</span><span>Music maker</span><span>®</span><span>06 / 06</span></div>
+    <img data-moldura="recorte transparente" class="recorte recorte--direita" src="assets/fotos/booking-recorte.webp" alt="" aria-hidden="true" loading="lazy" width="997" height="1500">
+    <div class="recorte-conteudo revelar">
+      <span class="rotulo">06 · Booking</span>
+      <h2>Bookings</h2>
+      <a class="contato-grande" data-whats-link target="_blank" rel="noopener">+55 (31) 99228-2642</a>
+      <button class="contato-grande" type="button" data-copiar="contatosilluz@gmail.com">contatosilluz@gmail.com</button>
+      <div class="acoes">
+        <a class="botao botao--claro" data-whats-link target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <button class="botao botao--linha" type="button" data-pdf>Salvar mídia kit em PDF</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <img src="assets/logo-branca.png" alt="SILLUZ" class="rodape-logo" width="1394" height="300" loading="lazy">
+  <div class="rodape-linha">
+    <span>Belo Horizonte, MG</span>
+    <ul class="rodape-redes" data-lista="redesRodape" aria-label="Redes sociais"></ul>
+    <span>Mídia kit 2027</span>
+  </div>
+</footer>
+
+<dialog class="tela" aria-label="Player">
+  <button class="tela-fechar" type="button" aria-label="Fechar">×</button>
+  <div class="tela-conteudo"></div>
+</dialog>
+
+<a class="whats" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3Zm0 23.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.3-4-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.5 9.8 10.2 5.2 16 5.2s10.5 4.6 10.5 10.4S21.8 26.1 16 26.1Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.200 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4Z"/></svg>
+</a>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
